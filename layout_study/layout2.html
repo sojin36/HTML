@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>야놀자 레이아웃</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .cate{
+            background-color: rgb(235, 235, 235);
+            border-radius: 100px;
+            text-align: center;
+            margin: 30px auto;
+            width: 30%;
+            padding: 15px;
+            display: flex;
+            flex-direction: row;
+        }
+        .layout{
+            background-color: #fff;
+            margin: 50px auto;
+            width: 70%;
+            border-radius: 15px;
+            border: 1px solid #ebebeb;
+            padding: 30px 20px;
+            gap: 50px;
+            display: flex;
+        }
+        .layout-item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+        }
+        .layout-img{
+            overflow: hidden;
+            border-radius: 45px;
+        }
+        .layout-item img{
+            width: 100%;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <div class="cate">
+            <p>축구 야구 E스포츠 스페셜</p>
+        </div>
+        <div class="layout-item">
+            <div class="layout-img">
+                <img src="1.png" alt="야놀자">
+            </div>
+            <p>강원FC</p>
+        </div>
+        <div class="layout-item">
+            <div class="layout-img">
+                <img src="2.png" alt="야놀자">
+            </div>
+            <p>부산FC1995</p>
+        </div>
+        <div class="layout-item">
+            <div class="layout-img">
+                <img src="3.png" alt="야놀자">
+            </div>
+            <p>수원FC</p>
+        </div>
+        <div class="layout-item">
+            <div class="layout-img">
+                <img src="4.png" alt="야놀자">
+            </div>
+            <p>수원삼성</p>
+        </div>
+        <div class="layout-item">
+            <div class="layout-img">
+                <img src="5.png" alt="야놀자">
+            </div>
+            <p>성남FC</p>
+        </div>
+        <div class="layout-item">
+            <div class="layout-img">
+                <img src="6.png" alt="야놀자">
+            </div>
+            <p>전남드래곤즈</p>
+        </div>
+        <div class="layout-item">
+            <div class="layout-img">
+                <img src="7.png" alt="야놀자">
+            </div>
+            <p>부산아이파크</p>
+        </div>
+        <div class="layout-item">
+            <div class="layout-img">
+                <img src="8.png" alt="야놀자">
+            </div>
+            <p>충남아산</p>
+        </div>
+        
+    </div>
+</body>
+</html>

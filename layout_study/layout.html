@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .cate{
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 30px 20px;
+            display: flex;
+            gap: 50PX;
+            justify-content: center;
+        }
+        /* 아이템 */
+        .cate-item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            width: 100px;
+            /* background-color: palegreen; */
+            cursor: pointer;
+        }
+        .cate-item img{
+            width: 100%;
+            display: block;
+        }
+        .cate-img{
+            border-radius: 45px;
+            overflow: hidden;
+        }
+        /* 상단 오른쪽 */
+        .header-right{
+            display: flex;
+            justify-content: flex-end;
+            width: 90%;
+            background-color: #fff;
+            margin: auto;
+            gap: 40px;
+            padding: 30px 0;
+        }
+        /* 아이템 */
+        .header-item{
+            display: flex;
+            gap: 4px;
+            cursor: pointer;
+        }
+        .header-item span{
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 상단 오른쪽 -->
+    <div class="header-right">
+        <!-- 아이템 -->
+        <div class="header-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 18 18"><path fill="currentColor" d="M11.291 5.3a2.291 2.291 0 1 0-4.582 0 2.291 2.291 0 0 0 4.582 0m1.3 0a3.59 3.59 0 1 1-7.182 0 3.59 3.59 0 0 1 7.182 0M14.6 13.344a2.35 2.35 0 0 0-2.35-2.35h-6.5a2.35 2.35 0 0 0-2.35 2.35v1.147c0 .193.157.35.35.35h10.5a.35.35 0 0 0 .35-.35zm1.3 1.147c0 .911-.739 1.65-1.65 1.65H3.75a1.65 1.65 0 0 1-1.65-1.65v-1.147a3.65 3.65 0 0 1 3.65-3.65h6.5a3.65 3.65 0 0 1 3.65 3.65z"></path></svg>
+        <!-- 내용 -->
+            <span>마이</span>
+        </div>
+        <!-- 아이템2 -->
+        <div class="header-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 18 18"><path fill="currentColor" d="M15.19 6.817c0-1.84-1.433-3.291-3.15-3.292-1.02 0-1.933.507-2.513 1.308l-.526.727-.526-.727c-.58-.8-1.494-1.307-2.513-1.308-1.717 0-3.15 1.452-3.15 3.292 0 .795.307 1.514.782 2.139l.214.263.006.008.006.007c.327.4 1.575 1.706 2.847 3.007.913.935 1.805 1.834 2.336 2.357.53-.523 1.423-1.42 2.335-2.356 1.27-1.301 2.516-2.607 2.843-3.008l.013-.015c.596-.684.995-1.493.995-2.402m1.3 0c0 1.312-.581 2.412-1.315 3.255h-.001c-.39.471-1.672 1.813-2.905 3.077-1.251 1.282-2.515 2.551-2.83 2.834a.65.65 0 0 1-.87 0c-.315-.283-1.58-1.55-2.833-2.833-1.249-1.278-2.55-2.636-2.923-3.093-.727-.841-1.301-1.937-1.301-3.24 0-2.513 1.97-4.592 4.45-4.592A4.36 4.36 0 0 1 9 3.464a4.36 4.36 0 0 1 3.04-1.24c2.48 0 4.45 2.08 4.45 4.593"></path></svg>
+        <!-- 내용2 -->
+            <span>찜</span>
+        </div>
+        <!-- 아이템3 -->
+        <div class="header-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 18 18"><path fill="currentColor" d="M7 14.652a.468.468 0 1 0-.937 0 .468.468 0 0 0 .936 0m1.3 0a1.769 1.769 0 1 1-3.538 0 1.769 1.769 0 0 1 3.537 0M12.964 14.652a.468.468 0 1 0-.937.001.468.468 0 0 0 .937-.002m1.3 0a1.769 1.769 0 1 1-3.537 0 1.769 1.769 0 0 1 3.537 0M14.396 3.95c.893 0 1.555.827 1.361 1.699L14.6 10.86a1.395 1.395 0 0 1-1.362 1.091h-7.38A1.396 1.396 0 0 1 4.5 10.875L3.065 4.75a.65.65 0 0 1 .633-.799zm-8.63 6.63c.01.042.048.073.092.073h7.379c.044 0 .084-.031.094-.075l1.158-5.212a.095.095 0 0 0-.093-.115H4.518z"></path><path fill="currentColor" d="M2.575 1.709a1.395 1.395 0 0 1 1.366 1.078l1.173 5.017a.65.65 0 0 1-1.266.296L2.676 3.082a.096.096 0 0 0-.094-.073l-1.41.008a.65.65 0 0 1-.008-1.3z"></path></svg>
+        <!-- 내용3 -->
+            <span>장바구니</span>
+        </div>
+        <!-- 아이템4 -->
+        <div class="header-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 18 18"><path fill="currentColor" d="M15.1 9A6.1 6.1 0 1 0 2.9 9a6.1 6.1 0 0 0 12.2 0m-6.75-.31V5.25a.65.65 0 0 1 1.3 0v3.44a.1.1 0 0 0 .03.07l2.03 2.03a.651.651 0 0 1-.92.92L8.76 9.68a1.4 1.4 0 0 1-.41-.99M16.4 9A7.4 7.4 0 1 1 1.6 9 7.4 7.4 0 0 1 16.4 9"></path></svg>
+        <!-- 내용4 -->
+            <span>최근 본 상품</span>
+        </div>
+    </div>
+    <!-- 카테고리영역 -->
+    <div class="cate">
+        <div class="cate-item">
+            <!-- 이미지 영역 -->
+            <div class="cate-img">
+                <img src="9oY6DI83jILVkByp.png" alt="이번주 핫딜">
+            </div>
+            <!-- 타이틀 -->
+            <p>이번주 핫딜</p>
+        </div>
+        <div class="cate-item">
+            <!-- 이미지 영역 -->
+            <div class="cate-img">
+                <img src="YvA71iHiFtgbzco2.png" alt="이번주 핫딜">
+            </div>
+            <!-- 타이틀 -->
+            <p>프리미엄 호텔</p>
+        </div>
+        <div class="cate-item">
+            <!-- 이미지 영역 -->
+            <div class="cate-img">
+                <img src="Yeo4qQZfXG6Q5N3J.png" alt="이번주 핫딜">
+            </div>
+            <!-- 타이틀 -->
+            <p>리조트</p>
+        </div>
+        <div class="cate-item">
+            <!-- 이미지 영역 -->
+            <div class="cate-img">
+                <img src="tLycC18y8j4UUNUT.png" alt="이번주 핫딜">
+            </div>
+            <!-- 타이틀 -->
+            <p>플래시 특가</p>
+        </div>
+        <div class="cate-item">
+            <!-- 이미지 영역 -->
+            <div class="cate-img">
+                <img src="N9P5MPofwxv6LKBm.png" alt="이번주 핫딜">
+            </div>
+            <!-- 타이틀 -->
+            <p>얼리버드 특가</p>
+        </div>
+        <div class="cate-item">
+            <!-- 이미지 영역 -->
+            <div class="cate-img">
+                <img src="IKp3QHxqSEMGkpum.png" alt="이번주 핫딜">
+            </div>
+            <!-- 타이틀 -->
+            <p>애견동반</p>
+        </div>
+        <div class="cate-item">
+            <!-- 이미지 영역 -->
+            <div class="cate-img">
+                <img src="EHt0YPP7Lj8QeFlh.png" alt="이번주 핫딜">
+            </div>
+            <!-- 타이틀 -->
+            <p>키즈 호텔</p>
+        </div>
+        <div class="cate-item">
+            <!-- 이미지 영역 -->
+            <div class="cate-img">
+                <img src="OZYmeY4d47IWkERS.png" alt="이번주 핫딜">
+            </div>
+            <!-- 타이틀 -->
+            <p>호캉스 패키지</p>
+        </div>
+    </div>
+</body>
+</html>

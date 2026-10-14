@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/solid.min.css">
+    <title>네이버 로그인 박스</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none;
+            color: palevioletred;
+        }
+        /* 로그인 박스 */
+        .login-box{
+           width: 420px;
+           padding: 21px 20px 18px;
+           border-radius: 8px;
+           box-shadow: palevioletred 0px 0px 0px 1px, pink;
+           /* background-color: aquamarine;  */
+           border: 1px solid paleturquoise;
+           text-align: center;
+           margin: 100px auto;
+        }
+        .login-box p{
+            font-size: 14px;
+            color: black;
+        }
+        /* 로그인 버튼 */
+        .login-btn{
+            width: 100%;
+            padding: 17px 0;
+            border: none;
+            background-color: #03a94d;
+            border-radius: 4px;
+            margin-top: 13px;
+            margin-bottom: 16px;
+            color: #fff;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        /* 네이버 글자 */
+        .login-btn span{
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .menu{
+            font-size: 13px;
+            color: #737373;
+        }
+        .menu a{
+            margin: 0 10px;
+        }
+        .fa-cart-shopping{
+            color: #03a94d;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- 로그인 박스 -->
+    <div class="login-box">
+        <p>네이버를 더 안전하고 편리하게 이용하세요</p>
+        <button class="login-btn"><span>NAVER</span>로그인</button>
+        <!-- menu -->
+        <div class="menu">
+            <a href="#">아이디 찾기</a>
+            |
+            <a href="#">비밀번호 찾기</a>
+            |
+            <a href="#">회원가입</a>
+        </div>
+    </div>
+    <button class="cart">
+        <i class="fa-solid fa-cart-shopping"></i>담기
+    </button>
+</body>
+</html>

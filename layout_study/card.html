@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>카드 만들기</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .card{
+            padding: 10px;
+            width: 300px;
+            background-color: #fff;
+        }
+        .img-box{
+            width: 100%;
+            padding: 5px 5px;
+            border-radius: 4px;
+            box-shadow: #f1e7e7 0px 0px 10px;
+            border: 1px solid #ebebeb;
+            /* margin: 100px auto; */
+        }
+        .img-box img{
+            width: 100%;
+            display: block;
+        }
+        .content{
+            background-color: #fff;
+        }
+        .button{
+            width: 100;
+            background-color: #fff;
+            border: 1px solid #aaa9a9;
+            text-align: center;
+            padding: 5px;
+            border-radius: 4px;
+            margin-top: 3px;
+            margin-bottom: 5px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .content2{
+            margin-top: 13px;
+        }
+        .origianl-price{
+            font-size: 15px;
+            color: #b9b7b7;
+            text-decoration: line-through;
+        }
+        .discount{
+            color: #ec0808;
+        }
+        .comment{
+            font-size: 12px;
+            color: #b9b7b7;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <!-- 이미지 -->
+        <div class="img-box">
+            <img src="KakaoTalk_261001_143346.jpg" alt="화장품">
+        </div>
+        <!-- 버튼 -->
+        <div class="button">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p>담기</p>
+        </div>
+        <!-- 내용 영역 -->
+        <div class="content">
+            [말콤] 퍼퓸 모이스트필 바디워시 <br> 1000mL 2종 (택1)
+        </div>
+        <div class="content2">
+            <span class="origianl-price">32,000원 </span> <br> 
+            <span class="discount"><strong>59%</strong></span>&nbsp;
+            <span class="price"><strong>12,900원</strong></span><br>
+            <span class="comment">
+                <i class="fa-solid fa-comment-dots"></i>
+                9,999+
+            </span>
+        </div>
+    </div>
+    
+</body>
+</html>
